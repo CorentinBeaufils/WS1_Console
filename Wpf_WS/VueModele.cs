@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-
-using System.Runtime.CompilerServices;
-using System.Windows.Input;
+﻿using System.ComponentModel;
 
 namespace Wpf_WS
 {
@@ -31,10 +23,13 @@ namespace Wpf_WS
             set { if (_inputText != value) { _inputText = value; OnPropertyChanged(nameof(InputText)); } }
         }
 
-        public string MainTitle { get => _mainTitle;
-            set { if (_mainTitle != value) { _mainTitle = value; OnPropertyChanged(nameof(MainTitle)); } } }
+        public string MainTitle
+        {
+            get => _mainTitle;
+            set { if (_mainTitle != value) { _mainTitle = value; OnPropertyChanged(nameof(MainTitle)); } }
+        }
 
-        
+
         public string TextBoxText
         {
             get { return _textBoxText; }
